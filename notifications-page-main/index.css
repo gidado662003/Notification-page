@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    font-size: 16px;
+    
+}
+body{
+    background-color: hsl(211, 68%, 94%);
+}
+main{
+    display: grid;
+    grid-template-columns: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container{
+    max-width: 1440px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    border-radius: 10px;
+}
+#notification{
+    background-color:hsl(219, 85%, 26%);
+    padding: 0 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+ 
+}
+#all-messege-read{
+    cursor: pointer;
+}
+#all-messege-read:hover{
+    color: hsl(219, 85%, 26%);
+}
+.top-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    width: 100%;
+}
+.messeges{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 55px auto;
+    align-items: center;
+}
+.unread{
+    background-color: #e5effa;
+    margin: 10px;
+}
+.messeges-name{
+    font-weight: bold;
+    cursor: pointer;
+}
+.messeges-name:hover{
+    color: hsl(219, 85%, 26%);
+}
+.reactions{
+    color:hsl(219, 12%, 42%);
+}
+.last-active{
+    color: hsl(219, 12%, 42%);
+}
+#red-dot{
+    background-color: hsl(1, 90%, 64%);
+    border-radius: 100%;
+    position: absolute;
+    margin: 4px 3px;
+    width: 10px;
+    height: 10px;
+}
+img{
+    max-width: 2em;
+    margin-right: 20px;
+}
+.sub-messege{
+    border: 1px solid grey;
+    width: 600px;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+   
+}
+.tornament:hover{
+    color: hsl(219, 85%, 26%);
+    font-weight: bold;
+
+}
+.sub-messege:hover{
+    background-color: hsl(205, 33%, 90%);
+    border: 0;
+    color: hsl(0, 0%, 50%);
+}
+.chess{
+    float: right;
+    margin-top: -20px;
+}
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); 
+}
+@media screen and (max-width:600px) {
+    *{
+        overflow: scroll;
+    }
+    .container{
+        width: fit-content ;
+    }   
+    .sub-messege{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:320px) {
+    *{
+        font-size: 14px;
+    }
+    .container{
+        width: fit-content;
+       
+    }
+    .chess{
+        margin-top: -10px;
+    }
+   
+    
+}
+
+

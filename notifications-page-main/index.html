@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Notifications page</title>
+
+ 
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <main>
+    <!-- TOP HEAD -->
+    <div class="container">
+        <div class="top-header">          
+            <h3> Notifications <span id="notification">3</span></h3>
+            <p id="all-messege-read" onclick=" getMessegeRead()">Mark all as read</p>
+         </div>
+         <!-- MAIN CONTENT -->
+
+            <div class="main-content">
+                <!-- FIRST MESSAGE/Mark Webber  -->
+
+                <div class="messeges unread afterRead " id="firstmessege" onclick=" getFirstMessege()">  
+                    <div>
+                        <img src="assets/images/avatar-mark-webber.webp" alt="">
+                    </div>
+                    <div>
+                        <span class="messeges-name"> Mark Webber </span> 
+                        <span class="reactions"> reacted to your recent post</span> 
+                        <span class="tornament" style="cursor: pointer;">My first tournament today!</span>  
+                        <span id="red-dot" class="afterRead"></span> <br>
+                        
+                        <span class="last-active">1m ago</span>
+                    </div>
+                </div>
+                <!-- SECOND MESSAGE/Angela Gray -->
+
+                <div class="messeges unread afterRead" id="secondmessege" onclick="getSecondMessege()">
+                    <div>
+                        <img src="assets/images/avatar-angela-gray.webp">
+                    </div>
+                    <div>
+                        <span class="messeges-name"> Angela Gray</span> 
+                        <span class="reactions">followed you</span>
+                        <span id="red-dot" class="afterRead"></span> <br>
+                        
+                        <span class="last-active">5m ago</span> 
+                    </div>
+
+                    
+                   
+
+                </div>
+                <!-- THIRD MESSAGE/Jacob Thompson -->
+
+                <div class="messeges unread afterRead " id="thirdmessege" onclick=" getThirdMessege()">  
+                    <div>
+                        <img src="assets/images/avatar-jacob-thompson.webp">
+                        
+                    </div>
+                    <div>
+                        
+                    <span class="messeges-name">Jacob Thompson </span> 
+                    <span class="reactions"> has joined your group </span> 
+                    <span style="color: hsl(219, 85%, 26%);font-weight: bold;cursor: pointer;"> Chess Club </span>
+                    <span id="red-dot" class="afterRead"></span>
+                    <br>
+                    <span class="last-active">1 day ago</span> 
+
+                    </div>
+
+                    
+
+                </div>
+                <!-- FORTH MESSEGE/Rizky Hasanuddin -->
+                
+                
+                    <div class=" messeges read" > 
+                        
+                            <div>
+                                <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="">
+                            </div>
+                            <div>
+                                <span class="messeges-name">Rizky Hasanuddin</span> 
+                            <span class="reactions">sent you a private message</span> 
+                            <br>
+                            <span  class="last-active">5 days ago</span> 
+                            <!-- SUB-MESSAGE -->
+                            <div class="sub-messege">
+                                Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+                                I'm already having lots of fun and improving my game.   
+                         </div>
+                            </div>
+                    </div>
+                    <!-- Kimberly Smith -->
+                    <div class=" messeges read">
+                        <div><img src="assets/images/avatar-kimberly-smith.webp" alt=""></div>
+                        <div>
+                            <span class="messeges-name">Kimberly Smith </span>
+                            <span  class="reactions">commented on your picture</span>    
+                            <br>
+                            <span class="last-active">1 week ago</span> 
+                            <img src="assets/images/image-chess.webp" alt="" class="chess">
+                        </div>
+
+                    </div>
+                    <!-- Nathan Peterson -->
+                    <div class="messeges read">
+                        <div><img src="assets/images/avatar-nathan-peterson.webp" alt=""></div>
+                        <div> 
+                            <span class="messeges-name">Nathan Peterson</span> 
+                            <span class="reactions">reacted to your recent post
+                            <span style="font-weight:bold">5 end-game strategies to increase your win rate</span></span> <br>
+                            <span class="last-active">2 weeks ago </span>                                
+                        </div>
+                    </div>
+                    <!-- Anna Kim -->
+                    <div class="messeges read">
+                        <div><img src="assets/images/avatar-anna-kim.webp" alt=""></div>
+                        <div>
+                           <span class="messeges-name">Anna Kim </span>
+                           <span class="reactions">the group 
+                           <span style="color: hsl(219, 85%, 26%);font-weight: bold;">Chess Club</span> 
+                           <br>
+                           2 weeks ago </span>
+                        </div>
+                      </div>
+            </div>
+    </div>
+</main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Gidado Abdulateef</a>.
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
