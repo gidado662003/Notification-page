@@ -2,52 +2,70 @@ let notificationNumber = document.getElementById("notification");
 let redDot = document.getElementById(`red-dot`)
 let messege = document.querySelectorAll(`.afterRead`);
 
+
+let secondMessege = document.getElementById("secondmessege");
+let firstMessege = document.getElementById("firstmessege");
+let thirdMessege = document.getElementById("thirdmessege")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 let totalNotifications = 3;
 let messegeRead = false
 function getMessegeRead(){
-    
+    totalNotifications = 0    
     for (let i = 0; i < messege.length; i++){
         messege[i].style.backgroundColor = `white`;
     }
-     notificationNumber.innerHTML = 0
+     notificationNumber.innerHTML = totalNotifications
 }
-function mm(){
+function notificationReduction(){
     
     if (totalNotifications === 0){
         notificationNumber.innerHTML = 0
     }
     else{
-        notificationNumber.innerHTML =  totalNotifications-=1
-    }   
-}
-function jj(){
-    messegeRead = false
+        notificationNumber.innerHTML = (totalNotifications=totalNotifications-1)
+    }
+  
+    console.log(totalNotifications);
 }
 function getFirstMessege(){
-  
-    if(messegeRead  != true ){
-        let firstMessege = document.getElementById("firstmessege")
+     
+    if(   firstMessege.style.backgroundColor != `white`){
         firstMessege.style.backgroundColor = `white`;
-        redDot.style.display = `none`;
-        mm()   
+        document.querySelector(`.afterReadFirstMessege`).style.display = `none`
+        notificationReduction()   
     }
 }
 function getSecondMessege(){
-  
-    if(messegeRead  != true ){
-        let secondMessege = document.getElementById("secondmessege")
+    
+    if(secondMessege.style.backgroundColor = `white`){
         secondMessege.style.backgroundColor = `white`;
-        redDot.style.display = `none`;
-       mm()  
+        document.querySelector(`.afterReadSecondMessege`).style.display = `none`
+       notificationReduction()  
     }
 }
 function getThirdMessege(){
-  
-    if(messegeRead  != true ){
-        let thirdMessege = document.getElementById("thirdmessege")
+    
+    if( thirdMessege.style.backgroundColor = `white`){
         thirdMessege.style.backgroundColor = `white`;
-        redDot.style.display = `none`;
-        mm()   
+        document.querySelector(`.afterReadThirdMessege`).style.display = `none`
+        notificationReduction()   
     }
 
 }
